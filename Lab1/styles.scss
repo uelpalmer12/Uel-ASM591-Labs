@@ -9,11 +9,13 @@
 #about{
     img{
         float: left;
-        max-width: 600px;
-        max-height: 600px;
+        max-width: 500px;
+        max-height: 500px;
         border: 2px solid;
         border-color: black;
         size: 40px;
+        margin-left: 200px;
+        margin-right: 50px;
         
     }
     p{
@@ -33,6 +35,10 @@
         margin-bottom: 70px;
         font-size: 24px; 
         list-style-type: none;
+        :hover{
+            color: green;
+        }
+        
     }
 
 }
