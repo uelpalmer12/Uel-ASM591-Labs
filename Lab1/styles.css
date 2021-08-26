@@ -24,7 +24,7 @@
   display: block;
   padding-right: 50px;
   padding-left: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 #about li {
   text-align: right;
@@ -36,6 +36,12 @@
 }
 #about li :hover {
   color: green;
+}
+#about li a img {
+  float: right;
+  max-width: 70px;
+  margin-right: 50px;
+  margin-left: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */
