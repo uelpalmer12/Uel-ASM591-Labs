@@ -17,9 +17,7 @@ OBSERVATION_TYPES = [
 class Field (models.Model):
     field_name= models.CharField(max_length=200)
     date_planted= models.DateTimeField
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    time_created= models.DateTimeField
 
 
 
@@ -31,7 +29,5 @@ class Observation(models.Model):
     observation_type = models.CharField(choices=OBSERVATION_TYPES, max_length=100)
     observation_date = models.DateTimeField
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
 
     
