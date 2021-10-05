@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <h1>My Farm Fields</h1>
+    <h1>My Farm </h1>
     {% if latest_fields %}
         <ul>
-        {% for field in latest_fields %}
+        {% for field in field %}
             <li><a href="/farmnotes/{{ field.id }}/">{{ field.field_name }}</a></li>
         {% endfor %}
         </ul>
