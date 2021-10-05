@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('field_name', models.CharField(max_length=200)),
-                ('date_planted', models.CharField(max_length=200)),
+                ('date_planted', models.DateTimeField),
             ],
         ),
         migrations.CreateModel(
