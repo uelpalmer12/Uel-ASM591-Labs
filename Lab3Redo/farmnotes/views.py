@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Field
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello, world! You're at the farmnotes index, or 'home' page.")
+    latest_fields = Field.objects.all()
+    context = {'latest_fields': latest_fields}
+    return render(request, 'farmnotes/index.html', context)
 
 def notes (request, field_id):
     return HttpResponse("You are looking at the notes related to field %s." % field_id)
