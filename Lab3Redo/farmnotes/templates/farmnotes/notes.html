@@ -9,14 +9,14 @@
 
 <body>
     <h1>My Farm </h1>
-    {% if latest_fields %}
+    {% if latest_observations %}
         <ul>
-        {% for field in field %}
-            <li><a href="/farmnotes/{{ field.id }}/">{{ field.field_name }}</a></li>
+        {% for observation in latest_observations %}
+            <li><a href="/farmnotes/{{ field.id }}/">{{ observation.observation_title }}</a></li>
         {% endfor %}
         </ul>
     {% else %}
-        <p>No fields are available.</p>
+        <p>No observation are available.</p>
     {% endif %}
 </body>
 </html>

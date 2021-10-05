@@ -1,6 +1,6 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
-from .models import Field
+from .models import Field, Observation
 # Create your views here.
 def index(request):
     latest_fields = Field.objects.all()
@@ -8,6 +8,7 @@ def index(request):
     return render(request, 'farmnotes/index.html', context)
 
 def notes(request, field_id):
+    latest_notes = Observation.objects.all()
     field = get_object_or_404(Field, pk=field_id)
     return render(request, 'farmnotes/notes.html', {'field': field})
 
