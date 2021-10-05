@@ -18,8 +18,10 @@ class Field (models.Model):
     field_name= models.CharField(max_length=200)
     date_planted= models.DateTimeField
 
-    def __str__(self):
-        return self.field_name
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
 
 class Observation(models.Model):
     field = models.ForeignKey(Field, on_delete=models.CASCADE)
@@ -29,5 +31,7 @@ class Observation(models.Model):
     observation_type = models.CharField(choices=OBSERVATION_TYPES, max_length=100)
     observation_date = models.DateTimeField
 
-    def __str__(self):
-        return self.observation_title
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    
