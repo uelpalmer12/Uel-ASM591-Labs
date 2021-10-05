@@ -17,7 +17,7 @@ OBSERVATION_TYPES = [
 class Field (models.Model):
     field_name= models.CharField(max_length=200)
     date_planted= models.DateTimeField
-    time_created= models.DateTimeField
+    
 
 
 
