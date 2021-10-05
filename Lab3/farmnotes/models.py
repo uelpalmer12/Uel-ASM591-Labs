@@ -22,11 +22,11 @@ class Field (models.Model):
         return self.field_name
 
 class Observation(models.Model):
-    field = models.ForeignKey('field_name', on_delete=models.CASCADE)
+    field = models.ForeignKey(Field, on_delete=models.CASCADE)
     observation_title = models.CharField(max_length=200)
     author = models.CharField(max_length=100)
     observation_content = models.CharField(max_length=100)
-    observation_type = models.CharField(choices=OBSERVATION_TYPES)
+    observation_type = models.CharField(choices=OBSERVATION_TYPES, max_length=100)
     observation_date = models.DateTimeField
 
     def __str__(self):
