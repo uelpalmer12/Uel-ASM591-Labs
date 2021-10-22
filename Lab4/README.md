@@ -15,5 +15,4 @@ their research is highly important both for them and for the farm manager.
 The solution thought about is to create a small web app consisting of multiple objects that have relationship together that will be linked in order to retrieve and add data in order to manage the farm. The web app will be implemented using Django.
 
 ## Data Model ##
-
-![Data model] (Lab4/images/datamodel.png)
+datamodel.png
