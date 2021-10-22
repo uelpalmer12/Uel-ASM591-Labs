@@ -26,6 +26,6 @@ Here is a dictionnary of the data model I created. They serve as a description t
 ### Field Class ###
 
 Attribute | Data Type | Description | Acceptable Values
------|-----|-----|-----|-----
+-----|-----|-----|-----|
 FieldID | Class | ACRE field ID Number | >0 | int
 field_name | Field, Attribute | Name of the field | 50 characterss | String
