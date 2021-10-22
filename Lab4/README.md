@@ -16,4 +16,4 @@ The solution thought about is to create a small web app consisting of multiple o
 
 ## Data Model ##
 
-![Data model] (https://github.com/uelpalmer12/Uel-ASM591-Labs/tree/main/Lab4/images/datamodel.png)
+![Data model] (Lab4/images/datamodel.png)
