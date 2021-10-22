@@ -25,8 +25,7 @@ Here is a dictionnary of the data model I created. They serve as a description t
 
 ### Field Class ###
 
-| Attribute  |  Field Type |  Description | Acceptable Value  |
-|---|---|---|---|---|
-|  FieldID |  Integer | This field will be the primary of the field class  |  Integer >0 |
-|  Field Type | Char  |  They will be a list to choose from either Research or Commercial | List value only  |
-|  Current State | Boolean  |  Will tell if the field is being used for research or not |  True or False |
+Variable | Scope | Description | Acceptable Values | Data Type
+-----|-----|-----|-----|-----
+field_number | Class | ACRE field ID Number | >0 | int
+field_name | Field, Attribute | Name of the field | 50 characterss | String
