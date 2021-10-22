@@ -17,3 +17,16 @@ The solution thought about is to create a small web app consisting of multiple o
 ## Data Model ##
 
 ![Data Model](https://github.com/uelpalmer12/Uel-ASM591-Labs/edit/main/Lab4/images/datamodel.png)
+
+
+## Data Dictionnary ##
+
+Here is a dictionnary of the data model I created. They serve as a description to better understand the data model.
+
+### Field Class ###
+
+| Attribute  |  Field Type |  Description | Acceptable Value  |
+|---|---|---|---|---|
+|  FieldID |  Integer | This field will be the primary of the field class  |  Integer >0 |
+|  Field Type | Char  |  They will be a list to choose from either Research or Commercial | List value only  |
+|  Current State | Boolean  |  Will tell if the field is being used for research or not |  True or False |
