@@ -27,5 +27,5 @@ Here is a dictionnary of the data model I created. They serve as a description t
 
 Attribute | Data Type | Description | Acceptable Values
 -----|-----|-----|-----|
-FieldID | Class | ACRE field ID Number | >0 | int
-field_name | Field, Attribute | Name of the field | 50 characterss | String
+FieldID | Integer | ACRE field ID Number | >0 
+Field Type | Char | List to choose from whether field is for research or commercial | 50 characters
