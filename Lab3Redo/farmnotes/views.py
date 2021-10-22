@@ -8,9 +8,12 @@ def index(request):
     return render(request, 'farmnotes/index.html', context)
 
 def notes(request, field_id):
-    latest_notes = Observation.objects.all()
     field = get_object_or_404(Field, pk=field_id)
     return render(request, 'farmnotes/notes.html', {'field': field})
 
-def observation(request, field_id, observation_id):
-        return HttpResponse("You are looking at observation %s related to field %s"(observation_id, field_id))
+def observation(request, observation_id, field_id):
+    observation = get_object_or_404(Observation,pk=observation_id)
+    field = get_object_or_404(Field, pk=field_id)
+    return render(request, 'farmnotes/observations.html', {'observation': observation, 'field': field})
+
+

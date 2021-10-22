@@ -10,14 +10,16 @@
 <body>
     <h1>{{ field.field_name }}</h1>
     <ul>
-    <h2>Observations:</h2>
-
-    {% for observation in field.observation_set.all %}
-        <li><a href="/farmnotes/{{ field.id }}/{{ observation.id }}/">{{ observation.observation_title}}</a></li>
-    {% endfor %}
-
-    </ul>
+    <h2>Observations: {{ observation.observation_title }}</h2>
     <p>
+        {{ observation.observation_content }}
+    </p>
+    <p>
+        {{ observation.author }}
+    </p>
+    <p>{{ observation.observation_date }}</p>
+    <p>
+        {{ observation.observation_type }}
+    </p>
 </body>
 </html>
-
