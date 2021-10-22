@@ -16,3 +16,4 @@ The solution thought about is to create a small web app consisting of multiple o
 
 ## Data Model ##
 
+![Data Model](Lab4/images/datamodel.png)
