@@ -1,0 +1,104 @@
+[
+    {
+        "model": "acrelog.Field",
+        "pk": 3,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "70"
+        }
+    },
+    {
+        "model": "acrelog.Field",
+        "pk": 4,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "71"
+        }
+
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 5,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "72"
+        }
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 6,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "73"
+        }
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 7,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "74"
+        }
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 8,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "75"
+        }
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 9,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "76"
+        }
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 10,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "77"
+        }
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 11,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "78"
+        }
+
+    },
+
+    {
+        "model": "acrelog.Field",
+        "pk": 12,
+        "fields":{
+            "field_type": "Research",
+            "current_state": "Not Used",
+            "field_name": "79"
+        }
+    }
+
+
+]
