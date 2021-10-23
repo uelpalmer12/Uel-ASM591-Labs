@@ -8,7 +8,7 @@
         <ul>
             <h2>Job performed:</h2>
             {% for job in jobs_done %}
-            <li><a href="/acrelog/{{ field.id }}/{{ job.id }}/"></a>{{ job }}</li>
+            <li><a href="/acrelog/{{ field.id }}/{{ job.id }}/">{{ job.job_title }}</a></li>
             {% empty %}
             <li>No jobs </li>
             {% endfor %}
