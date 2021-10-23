@@ -10,7 +10,7 @@
         <ul>
             <h2>Field Name:</h2>
             {% for field in fields %}
-            <li>{{ field.field_name }}</li>
+            <li><a href="{% url 'notes' field.id %}">{{ field.field_name }}</a></li>
             {% empty %}
             <li>No fields </li>
             {% endfor %}
