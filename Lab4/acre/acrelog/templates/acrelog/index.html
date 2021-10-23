@@ -2,10 +2,16 @@
 <html, lang="en">
     <head>
         <title>ACRE Farm Management App</title>
+    </head>
         <body>
             <h1>
-                Hello World!
+                ACRE FIELDS
             </h1>
+            <h2>FIELD NAMES: </h2>
+            <ul>
+               {% for field in fields %} 
+               <li><a href="/acrelog/{{ field.id }}/"></a>{{ field.field_name }}</li>
+               {% endfor %}
+            </ul>
         </body>
-    </head>
 </html>
