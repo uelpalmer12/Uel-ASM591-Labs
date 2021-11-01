@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmnotes App</title>
+    <title>Farmnotes Application</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'farmnotes/style.css' %}">
+</head>
+
+<body>
+    <h1>My Farm </h1>
+    {% if latest_observations %}
+        <ul>
+        {% for observation in latest_observations %}
+            <li><a href="/farmnotes/{{ field.id }}/">{{ observation.observation_title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No observation are available.</p>
+    {% endif %}
+</body>
+</html>
+
