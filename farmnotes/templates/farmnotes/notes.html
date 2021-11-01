@@ -8,16 +8,16 @@
 </head>
 
 <body>
-    <h1>{{ field.field_name }}</h1>
-    <ul>
-    <h2>Observations:</h2>
-
-    {% for observation in field.observation_set.all %}
-        <li><a href="/farmnotes/{{ field.id }}/{{ observation.id }}/">{{ observation.observation_title}}</a></li>
-    {% endfor %}
-
-    </ul>
-    <p>
+    <h1>My Farm </h1>
+    {% if latest_observations %}
+        <ul>
+        {% for observation in latest_observations %}
+            <li><a href="/farmnotes/{{ field.id }}/">{{ observation.observation_title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No observation are available.</p>
+    {% endif %}
 </body>
 </html>
 
