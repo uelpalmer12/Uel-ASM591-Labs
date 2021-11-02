@@ -52,3 +52,6 @@ Material amount | Integer | Material amount used during job | Integer value but 
 Type | Char | list to choose from whether research, commercial or class teaching | List values only
 Field.FieldID | Integer | Foreign key from the field table in order to link the data models | Foreign Key
 Worker.WorkerID | Integer | Foreign key from the worker table in order to link the data models | Foreign key
+
+
+After presenting my paper prototype to a couple of users they found it helpful that it was easy to use with a minimal amount of overhead in the user interface. Some, however found the app quite empty and wanted more multimedia content. The users also got stuck trying to go back to the previous screen "List of jobs" after entering a specific job. They had to go all the way back to first screen "All fields" and go through all the steps again. The most value came from the ease of use of the app and the capability to know what to do even on the first use. Something I would improve is to put more multimedia content and add more texture to my app.
