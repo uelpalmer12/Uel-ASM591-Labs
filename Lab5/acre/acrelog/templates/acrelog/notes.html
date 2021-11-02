@@ -1,0 +1,24 @@
+{% extends "acrelog/skeleton.html" %}
+
+{% block content %}
+        <h1>{{ field.field_name }}</h1>
+        <ul>
+            <h2>Job performed:</h2>
+            {% for job in jobs_done %}
+            <div class="card" style="width:18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ job.job_title }}</h5>
+            
+                    <p class="card-text">Date: {{ job.job_date }}</p>
+            
+                    <a href="/acrelog/{{ field.id }}/{{ job.id }}/" class="card-link">see details... </a>
+                </div>
+            </div>
+            {% empty %}
+            <li>No jobs </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'index' %}"><button type="button" class="btn btn-primary btn-lg">Go back to the list of all fields</button></a>
+        {% endblock %}
+</html>
+
